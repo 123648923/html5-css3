@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin的塌陷问题</title>
+    <style>
+        .outer {
+            width: 400px;
+            /* height: 400px; */
+            background-color: gray;
+            /* border: 1px solid red; */
+            /* padding: 1px; */
+            overflow: hidden;
+        }
+
+        .inner1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            /* margin-bottom: 50px; */
+            margin-top: 50px;
+        }
+
+        .inner2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* margin-top: 50px; */
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 第一个元素的 margin-bottom和最后一个元素的margin-top会作用到父元素上，父元素写overflow: hidden可解决问题 -->
+    <div class="outer">
+        <div class="inner1">inner1</div>
+        <div class="inner2">inner2</div>
+    </div>
+</body>
+
+</html>

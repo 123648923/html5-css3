@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin的合并问题</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* margin: 50px; */
+
+            /* margin-left: 10px;
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 50px; */
+            margin: 10px,20px,30px,40px;
+
+            font-size: 20px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">你好啊！</div>
+</body>
+
+</html>

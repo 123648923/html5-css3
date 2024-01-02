@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>16-伪元素选择器</title>
+    <style>
+        /* 选中你的是div中的第一个字符 */
+        div::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+        /* 选中的是div中首行的字符 */
+        div::first-line{
+            background-color: blanchedalmond;
+        }
+        /* 选中你的是被鼠标选择的字符 */
+        div::selection{
+            background-color: green;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, provident quaerat est vitae ullam, nisi doloremque
+        quis esse, blanditiis possimus impedit! Possimus dolorum obcaecati laboriosam earum inventore, dicta nobis
+        error, incidunt, quisquam eius vitae! Officia, nesciunt repudiandae ipsa ad eius ratione quae reprehenderit
+        velit voluptatibus repellendus dolore. Quisquam iusto, veritatis, illum porro consequatur officiis tempore
+        suscipit, odit omnis quam facilis?</div>
+</body>
+
+</html>

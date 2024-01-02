@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin的注意事项-03</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 400px;
+            margin: 50px;
+            background-color: deepskyblue;
+        }
+
+        img {
+            width: 100px;
+            margin: 50px;
+        }
+
+        .one {
+            background-color: skyblue;
+        }
+
+        .two {
+            background-color: orange;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 300px;
+            margin-bottom: 300px;
+        }
+
+        .three {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 行内元素设置margin左右的margin起作用，上下不起作用 -->
+    <div id="d1">我是一个块</div>
+    <div>我是文字</div>
+    <hr>
+    <img src="../../fj.webp" alt="">
+    <hr>
+    <span class="one">人之初</span><span class="two">人之初</span><span class="three">人之初</span>
+</body>
+
+</html>

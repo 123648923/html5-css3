@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>长度单位</title>
+    <style>
+        #d1 {
+            /* 第一种长度的单位：px */
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: skyblue;
+        }
+        #d2 {
+            /* 第二种长度的单位：px（相对于当前元素或其父元素的font-size的倍数） */
+            width: 10em;
+            height: 10px;
+            font-size: 20px;
+            background-color: orange;
+        }
+        #d3 {
+            /* 第三种长度的单位：rem (直接找到根元素的font-size的倍数)*/
+            width: 10rem;
+            height: 10rem;
+            font-size: 20px;
+            background-color: green;
+        }
+        #d4 {
+            /* 第四种长度的单位：% (相对其父元素的百分比)*/
+            width: 50%;
+            height: 25%;
+            font-size: 20px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">1</div>
+    <hr>
+    <div id="d2">2</div>
+    <hr>
+    <div id="d3">3</div>
+    <hr>
+    <div id="d4">4</div>
+    <hr>
+    <div id="d4">好好学习</div>
+    <hr>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合-03-后代-选择器</title>
+    <style>
+        ul li{
+            color: red;
+        }
+        ol li{
+            color: green;
+        }
+        ul li a{
+            color: chartreuse;
+        }
+        ol a{
+            color: chartreuse;
+        }
+        .zs li.zs1 {
+            color: brown;
+        }
+        .zs div{
+            color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>抽烟</li>
+        <li>喝酒</li>
+        <li><a href="#">吃饭</a></li>
+    </ul>
+    <hr>
+    <ol>
+        <li>张三</li>
+        <li>李四</li>
+        <li><a href="#">王五</a></li>
+    </ol>
+    <hr>
+    <ol class="zs">
+        <li class="zs1">张三1</li>
+        <li>李四1</li>
+        <li><a href="#">王五1</a></li>
+    </ol>
+</body>
+</html>

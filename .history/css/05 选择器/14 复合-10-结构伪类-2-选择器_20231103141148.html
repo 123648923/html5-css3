@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>复合-09-结构伪类-01-选择器</title>
+    <style>
+        /* 选中的是div的最后一个儿子的p元素 - 结构1 */
+        /* div>p:last-child {
+            color: red;
+        } */
+        /* 选中的是div的第N个儿子的p元素 - 结构2 */
+        /* div>p:nth-child(3) {
+            color: red;
+        } */
+
+        div>p:nth-child(0){
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+        <p>孙七：58分</p>
+        <p>李八：48分</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <div>
+        <p>第1个</p>
+        <p>第2个</p>
+        <p>第3个</p>
+        <p>第4个</p>
+        <p>第5个</p>
+        <p>第6个</p>
+        <p>第7个</p>
+        <p>第8个</p>
+        <p>第9个</p>
+        <p>第10个</p>
+    </div>
+</body>
+
+</html>

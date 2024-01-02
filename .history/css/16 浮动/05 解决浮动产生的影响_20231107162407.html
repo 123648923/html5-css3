@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>解决浮动产生的影响</title>
+    <style>
+        .outer {
+            width: 500px;
+            height: 122px;
+            background-color: gray;
+            border: 1px solid black;
+            float: left;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            float: left;
+        }
+
+        .box4 {
+            display: inline-block;
+            height: 251px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <!-- <div class="box box4">4</div> -->
+        <div class="box box5">5</div>
+    </div>
+     <!-- <div style="background-color: bisque;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod odio repellat
+        nam facilis. Voluptatem corrupti
+        nostrum commodi esse recusandae, corporis suscipit, reiciendis repudiandae harum, sunt unde! Labore repellendus
+        expedita asperiores iusto at nemo, quaerat facilis ex. Cum eligendi maxime eos aut neque delectus, distinctio
+        corporis assumenda autem quaerat praesentium ea provident? Itaque eaque doloribus eum in deleniti quibusdam, a
+        animi nam repellendus quasi provident, accusamus tempora fuga at, laborum dolores! Quidem omnis dolorem, esse
+        quas pariatur autem fuga. Sed sunt dicta quam eos eveniet minima dolorum error inventore fugiat nam architecto
+        autem suscipit libero deleniti aut, perferendis natus vitae quidem?</div> -->
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>复合-12-否定伪类-选择器</title>
+    <style>
+        div>p:not(.fail){
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>张三：98分</p>
+        <p>李四：88分</p>
+        <p>王五：78分</p>
+        <p>赵六：68分</p>
+        <p class="fail">孙七：58分</p>
+        <p class="fail">李八：48分</p>
+    </div>
+</body>
+
+</html>
